@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, serif;
+  background-color: #fafaf8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  height: 80px;
+}
+
+header > img {
+  width: 40px;
+}
+
+header > h1 {
+  font-weight: 400;
+}
+
+main {
+  padding: 30px 10px 30px;
+}
+
+.add-ingridient-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 38px;
+}
+
+.add-ingridient-form > input {
+  padding: 9px 13px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.add-ingridient-form > button {
+  font-family: Inter, serif;
+  padding: 9px 13px;
+  background-color: #141413;
+  color: #fafaf8;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  width: 150px;
+  font-weight: 500;
+}
+
+.add-ingridient-form > button ::before{
+    content: "+";
+    margin-right: 5px ;
+}
